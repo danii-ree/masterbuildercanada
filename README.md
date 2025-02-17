@@ -1,2 +1,0 @@
-# masterbuildercanada
-A carpentry website

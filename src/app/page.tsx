@@ -46,7 +46,7 @@ function App() {
             <div className="flex items-center justify-center mb-4">
               <Hammer className="w-12 h-12 mr-2" />
             </div>
-            <h1 className="text-5xl font-bold mb-4">Wood Cabin Decor</h1>
+            <h1 className="text-5xl font-bold mb-4">Master Builder</h1>
             <p className="text-xl">Custom carpentry</p>
             <a href="/?showDialog=y" className="bg-teal-500 text-xl rounded-md p-3 mt-8 cursor-pointer">Get your free estimate</a>
           </div>

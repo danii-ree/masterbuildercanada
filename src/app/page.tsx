@@ -1,7 +1,18 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Hammer, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import Dialog from './components/Modal';
 
 function App() {
+  
+  async function onClose() {
+    "use server"
+    console.log("Modal has been closed")
+  }
+  async function onOk() {
+    "use server"
+    console.log("submit was clicked")
+  }
+
   return (
     <div className="min-h-screen bg-amber-50">
       {/* Hero Section */}
@@ -11,13 +22,32 @@ function App() {
           backgroundImage: 'url("https://i.imgur.com/GdIkuL6.jpeg")',
         }}
       >
+        <Dialog title="Free Estimate" onClose={onClose} onOk={onOk}>
+          <div className="m-5 col-span-2 sm:col-span-1">
+                          <label className="block mb-2 text-sm font-medium text-gray-900">First Name</label>
+                          <input name="price" id="price" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:focus:border-primary-500" placeholder="John"/>
+          </div>
+          <div className="m-5 col-span-2 sm:col-span-1">
+                          <label className="block mb-2 text-sm font-medium text-gray-900">Last Name</label>
+                          <input className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:focus:border-primary-500" placeholder="Doe"/>
+          </div>
+          <div className="m-5 col-span-2 sm:col-span-1">
+                          <label className="block mb-2 text-sm font-medium text-gray-900">Email</label>
+                          <input type="email" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:focus:border-primary-500" placeholder="john.doe@email.com"/>
+          </div>        
+          <div className="m-5 col-span-2 sm:col-span-1">
+                          <label className="block mb-2 text-sm font-medium text-gray-900">Phone</label>
+                          <input className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:focus:border-primary-500" placeholder="+1(437) NUMBER"/>
+          </div>
+        </Dialog>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <div className="text-center text-white">
+          <div className="flex flex-col text-center text-white">
             <div className="flex items-center justify-center mb-4">
               <Hammer className="w-12 h-12 mr-2" />
             </div>
             <h1 className="text-5xl font-bold mb-4">Wood Cabin Decor</h1>
             <p className="text-xl">Custom carpentry</p>
+            <a href="/?showDialog=y" className="bg-teal-500 text-xl rounded-md p-3 mt-8 cursor-pointer">Get your free estimate</a>
           </div>
         </div>
       </div>

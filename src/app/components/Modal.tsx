@@ -1,6 +1,6 @@
 "use client"
 import { useSearchParams } from 'next/navigation';
-import React, { useRef, useEffect, JSX} from 'react';
+import React, { useRef, useEffect, JSX, Suspense} from 'react';
 import { Phone, Mail, MapPin, Hammer, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 type Props = {

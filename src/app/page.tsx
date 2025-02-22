@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Phone, Mail, MapPin, Hammer, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import Dialog from './components/Modal';
 
@@ -14,6 +14,7 @@ function App() {
   }
 
   return (
+    <Suspense>
     <div className="min-h-screen bg-amber-50">
       {/* Hero Section */}
       <div 
@@ -111,6 +112,7 @@ function App() {
         </div>
       </div>
     </div>
+    </Suspense>
   );
 }
 

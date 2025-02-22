@@ -36,10 +36,6 @@ function App() {
                           <label className="block mb-2 text-sm font-medium text-gray-900">Email</label>
                           <input type="email" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:focus:border-primary-500" placeholder="john.doe@email.com"/>
           </div>        
-          <div className="m-5 col-span-2 sm:col-span-1">
-                          <label className="block mb-2 text-sm font-medium text-gray-900">Phone</label>
-                          <input className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:focus:border-primary-500" placeholder="+1(437) NUMBER"/>
-          </div>
         </Dialog>
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div className="flex flex-col text-center text-white">
@@ -47,8 +43,8 @@ function App() {
               <Hammer className="w-12 h-12 mr-2" />
             </div>
             <h1 className="text-5xl font-bold mb-4">Master Builder</h1>
-            <p className="text-xl">Custom carpentry</p>
-            <a href="/?showDialog=y" className="bg-teal-500 text-xl rounded-md p-3 mt-8 cursor-pointer">Get your free estimate</a>
+            <p className="text-xl">Custom Carpentry</p>
+            <a href="/?showDialog=y" className="bg-teal-500 text-xl rounded-md p-3 mt-8 cursor-pointer">Get Your Free Estimate</a>
           </div>
         </div>
       </div>

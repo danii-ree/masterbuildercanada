@@ -44,7 +44,7 @@ function App() {
             </div>
             <h1 className="text-5xl font-bold mb-4">Master Builder</h1>
             <p className="text-xl">Custom Carpentry</p>
-            <a href="/?showDialog=y" className="bg-teal-500 text-xl rounded-md p-3 mt-8 cursor-pointer">Get Your Free Estimate</a>
+            {/* <a href="/?showDialog=y" className="bg-teal-500 text-xl rounded-md p-3 mt-8 cursor-pointer">Get Your Free Estimate</a> */}
           </div>
         </div>
       </div>

@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import { Phone, Mail, MapPin, Instagram, Youtube } from "lucide-react";
 
 export default function Home() {
-  const [portfolioImages, setPortfolioImages] = useState<string[]>([]);
+  // const [portfolioImages, setPortfolioImages] = useState<string[]>([]);
   const [showEstimate, setShowEstimate] = useState(false);
   const [estimateName, setEstimateName] = useState("");
   const [estimateEmail, setEstimateEmail] = useState("");

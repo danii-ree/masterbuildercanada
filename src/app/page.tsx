@@ -56,8 +56,8 @@ export default function Home() {
         <Image src="https://i.imgur.com/GdIkuL6.jpeg" alt="Hero" fill className="object-cover z-0" priority />
         <div className="absolute inset-0 bg-black/40 z-10 flex items-center justify-center">
           <div className="text-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-2">Master Builder</h1>
-            <div className="text-lg tracking-widest mb-2">Custom Carpentery</div>
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-2">The Cedar Touch</h1>
+            <div className="text-lg tracking-widest mb-2">Custom Carpentery & Renovation</div>
           </div>
         </div>
       </section>

@@ -57,7 +57,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40 z-10 flex items-center justify-center">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-2">The Cedar Touch</h1>
-            <div className="text-lg tracking-widest mb-2">Custom Carpentery & Renovation</div>
+            <div className="text-lg tracking-widest mb-2">Custom Carpentery</div>
           </div>
         </div>
       </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import logo from "./logo.png";
+import { Analytics } from "@vercel/analytics/next";
 import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
@@ -40,6 +41,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${display.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
